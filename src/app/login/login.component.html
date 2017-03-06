@@ -1,0 +1,29 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h4 class="panel-title">Login</h4>
+    </div>
+    <div class="panel-body">
+        <form class = "form-horizontal" [formGroup]="loginForm">
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="userId">User Name</label>
+                <div class="col-md-8">
+                    <input class="form-control"
+                            id="userId" 
+                            type="text" 
+                            placeholder="User name (required)" 
+                            formControlName="userName">
+                </div>  
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="passwordId">Password</label>
+                <div class="col-md-8">
+                    <input class="form-control"
+                            id="passwordId" 
+                            type="password" 
+                            placeholder="Password (required)" 
+                            formControlName="password">
+                </div>  
+            </div>
+        </form>
+    </div>
+</div>
